@@ -39,4 +39,4 @@ Site goes live at `https://swordsouloflabrynth.github.io/portfolio/`.
 Derived from the Memoora design system: lavender→sky gradients
 (#4a44c6 / #a8d8ff / #f7c8e8), Fraunces + Nunito, pill geometry, soft shadows.
 Each case card gets its own tinted world: lavender (Memoora), warm sand
-(Baganetic), dusk plum (Baganetic Mobile / Golden Hour).
+(Baganetic web), and heritage cream (the current Baganetic Mobile build).
