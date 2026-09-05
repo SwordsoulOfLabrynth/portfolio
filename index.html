@@ -32,6 +32,7 @@
           <li><a href="#work">Work</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/documents/Kyaw_Zay_Ya_Hein_CV_Resume.pdf" target="_blank">Résumé</a></li>
           <li><a href="https://github.com/SwordsoulOfLabrynth" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
       </nav>
@@ -43,16 +44,26 @@
     <!-- Hero -->
     <section class="hero">
       <div class="wrap">
-        <span class="hero-badge">✦ Open to freelance &amp; internships</span>
-        <h1>I design it,<br />then I <em>build it</em>.</h1>
+        <span class="hero-badge">✦ Open to remote &amp; in-person opportunities</span>
+        <h1>I turn product ideas<br />into <em>working software</em>.</h1>
         <p class="hero-sub">
           Hi, I'm <strong>Kyaw Zay Ya Hein</strong> — a UI/UX designer and full-stack
-          developer shipping web &amp; Flutter apps. CSE senior at MIIT, Myanmar.
+          developer who builds web and Flutter products end to end. CSE senior at MIIT, Myanmar.
         </p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#work">See my work ↓</a>
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/kyaw-zay-ya-hein-00aba927b" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="assets/documents/Kyaw_Zay_Ya_Hein_CV_Resume.pdf" target="_blank">Download résumé</a>
         </div>
+      </div>
+    </section>
+
+    <!-- Proof at a glance -->
+    <section class="proof wrap" aria-label="Portfolio highlights">
+      <div class="proof-grid">
+        <div class="proof-item"><strong>50+</strong><span>UI/UX screens designed for Memoora</span></div>
+        <div class="proof-item"><strong>A</strong><span>Highest grade for a university special project</span></div>
+        <div class="proof-item"><strong>2nd</strong><span>Joint place in a one-month hackathon</span></div>
+        <div class="proof-item"><strong>2</strong><span>Product tracks: full-stack web and Flutter mobile</span></div>
       </div>
     </section>
 
@@ -81,15 +92,15 @@
     <section id="work" class="work wrap">
       <div class="section-head">
         <span class="section-eyebrow">Selected work</span>
-        <h2>Three projects, both halves of the craft</h2>
-        <p>Each one covers design and engineering — because handing off is slower than doing both.</p>
+        <h2>Selected work, with the proof behind it</h2>
+        <p>From design systems to databases and offline routing, each project shows what I owned and how it works.</p>
       </div>
 
       <!-- Memoora -->
       <article class="case case-memoora reveal">
         <div class="case-media">
           <div class="phone-strip">
-            <img src="assets/memoora/memoora_home.png" alt="Memoora home screen with dream recording call-to-action and recent dreams list" loading="lazy" />
+            <img src="assets/memoora/memoora_details.png" alt="Memoora dream-details screen with AI-generated symbols and analysis" loading="lazy" />
             <img src="assets/memoora/memoora_record_voice.png" alt="Memoora voice recording screen" loading="lazy" />
             <img src="assets/memoora/memoora_insight.png" alt="Memoora weekly insight screen with dream pattern charts" loading="lazy" />
           </div>
@@ -107,6 +118,10 @@
             system — typography scale, color tokens, components, and icons — in a soft
             "dreamscape" visual language.
           </p>
+          <ul class="case-proof">
+            <li><strong>Contribution:</strong> user flows, reusable components, visual language, and developer handoff.</li>
+            <li><strong>Outcome:</strong> Joint 2nd Place with a four-person team.</li>
+          </ul>
           <div class="case-links">
             <a class="btn btn-ghost" href="https://www.figma.com/design/nVQEGdm4VUMBKmwo45Vdj2/Dream-Chasers" target="_blank" rel="noopener">View in Figma →</a>
           </div>
@@ -126,11 +141,15 @@
             <span class="tag">JavaScript</span><span class="tag">Python</span><span class="tag">MongoDB</span><span class="tag">A* pathfinding</span><span class="tag">AI chatbot</span>
           </div>
           <p class="case-desc">
-            A tour-guide platform for Bagan's 2,000+ ancient pagodas: interactive map with
+            A tour-guide platform for Bagan's ancient pagodas: interactive map with
             A* shortest-route planning over real road data, JWT auth, favorites, an AI
             chatbot grounded in pagoda knowledge, and a full admin dashboard with CRUD
             and audit logs.
           </p>
+          <ul class="case-proof">
+            <li><strong>Engineering:</strong> REST APIs, MongoDB data management, validation, security headers, and admin activity logs.</li>
+            <li><strong>Outcome:</strong> awarded the highest grade, A, for the university special project.</li>
+          </ul>
           <div class="case-links">
             <a class="btn btn-ghost" href="https://github.com/SwordsoulOfLabrynth/Baganetic" target="_blank" rel="noopener">View code →</a>
           </div>
@@ -143,11 +162,11 @@
           <div class="mobile-strip">
             <img src="assets/mobile/baganetic_mobile_home.png" alt="Baganetic Mobile home screen showing popular pagodas" loading="lazy" />
             <img src="assets/mobile/baganetic_mobile_map.png" alt="Baganetic Mobile shortest-path planner on an interactive map" loading="lazy" />
-            <img src="assets/mobile/baganetic_mobile_pagodas.png" alt="Baganetic Mobile Pagodas browse screen with search, filters, and pagoda cards" loading="lazy" />
+            <img src="assets/mobile/baganetic_mobile_community.png" alt="Baganetic Mobile temple detail screen with historical information and saved-place controls" loading="lazy" />
           </div>
         </div>
         <div class="case-body">
-          <span class="case-award">📱 Mobile-first special project</span>
+          <span class="case-award">🏅 Special Award — team project show</span>
           <p class="case-role">Flutter Development · Firebase · UI/UX</p>
           <h3>Baganetic Mobile</h3>
           <div class="case-tag-row">
@@ -159,9 +178,32 @@
             SQLite local data, cached OpenStreetMap tiles, on-device A* routing, trip
             planning, road reports, an AI travel assistant, and English/Myanmar support.
           </p>
+          <ul class="case-proof">
+            <li><strong>Built for connectivity constraints:</strong> Firebase for cloud features, SQLite and cached map tiles for offline use.</li>
+            <li><strong>Product depth:</strong> trip planning, road-safety reports, localization, and route planning in one mobile experience.</li>
+          </ul>
           <div class="case-links">
             <a class="btn btn-ghost" href="https://github.com/SwordsoulOfLabrynth/BaganeticMobileApp" target="_blank" rel="noopener">View code →</a>
           </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Additional engineering evidence -->
+    <section class="other-work wrap" aria-labelledby="additional-work-title">
+      <div class="section-head">
+        <span class="section-eyebrow">Additional work</span>
+        <h2 id="additional-work-title">A practical backend product, too</h2>
+      </div>
+      <article class="mini-case reveal">
+        <div class="mini-case-mark" aria-hidden="true">POS</div>
+        <div>
+          <p class="case-role">Django · SQLite · Server-rendered web app</p>
+          <h3>Retail POS</h3>
+          <p>A role-based point-of-sale system with product and stock management, cashier checkout, printable receipts, protected sales reporting, and tests for the transactional flow.</p>
+        </div>
+        <div class="mini-case-action">
+          <a class="btn btn-ghost" href="https://github.com/SwordsoulOfLabrynth/django-retail-pos" target="_blank" rel="noopener">View code →</a>
         </div>
       </article>
     </section>
@@ -171,8 +213,8 @@
       <div class="wrap">
         <div class="section-head">
           <span class="section-eyebrow">How I work</span>
-          <h2>One person, zero handoffs</h2>
-          <p>The gap between a Figma file and shipped code is where most projects stall. I close it.</p>
+          <h2>One person across product and code</h2>
+          <p>I connect user needs, interface decisions, and the technical work required to make a product usable.</p>
         </div>
         <div class="process-grid">
           <div class="process-step reveal">
@@ -184,8 +226,8 @@
             <p>The same person who designed it writes the code — so spacing, motion, and edge cases survive the translation.</p>
           </div>
           <div class="process-step reveal">
-            <h3>Ship</h3>
-            <p>Deployed, documented, and iterated. Auth, databases, offline support, AI features — the unglamorous parts included.</p>
+            <h3>Validate</h3>
+            <p>I test real user flows and edge cases — especially auth, data, offline support, and the details that make a product dependable.</p>
           </div>
         </div>
       </div>
@@ -194,8 +236,8 @@
     <!-- Contact -->
     <section id="contact" class="contact wrap">
       <span class="section-eyebrow">Contact</span>
-      <h2>Let's make something dreamy</h2>
-      <p>I'm available for freelance projects and internships — web apps, mobile apps, or design-to-code work.</p>
+      <h2>Let's build something useful</h2>
+      <p>I'm open to internships and opportunities in software, full-stack, mobile, and design-to-code work.</p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="mailto:kyawzayyahein.mdy@gmail.com">✉ kyawzayyahein.mdy@gmail.com</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/kyaw-zay-ya-hein-00aba927b" target="_blank" rel="noopener">LinkedIn</a>

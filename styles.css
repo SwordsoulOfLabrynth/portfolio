@@ -207,6 +207,41 @@ a { color: var(--purple-700); }
   z-index: 1;
 }
 
+/* ---------- Proof at a glance ---------- */
+.proof {
+  position: relative;
+  z-index: 2;
+  margin-top: calc(var(--s-4) * -1);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(74, 68, 198, 0.12);
+  border-radius: var(--r-lg);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow-card);
+}
+
+.proof-item {
+  min-height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--s-3);
+  border-right: 1px solid rgba(74, 68, 198, 0.12);
+}
+.proof-item:last-child { border-right: 0; }
+.proof-item strong {
+  font-family: var(--font-display);
+  color: var(--purple-700);
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0.45rem;
+}
+.proof-item span { color: var(--ink-soft); font-size: var(--text-xs); font-weight: 700; line-height: 1.45; }
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -291,7 +326,7 @@ a { color: var(--purple-700); }
 .section-head p { color: var(--ink-soft); margin: 0; }
 
 /* ---------- Case studies ---------- */
-.work { padding-block: var(--s-8) var(--s-12); }
+.work { padding-block: var(--s-8) var(--s-6); }
 
 .case {
   display: grid;
@@ -369,6 +404,34 @@ a { color: var(--purple-700); }
 
 .case-desc { color: var(--ink-soft); }
 
+.case-proof {
+  display: grid;
+  gap: 0.55rem;
+  margin: var(--s-3) 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink-soft);
+  font-size: var(--text-sm);
+}
+.case-proof li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+.case-proof li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.52rem;
+  height: 0.52rem;
+  border-radius: 50%;
+  background: var(--purple-500);
+}
+.case-proof strong { color: var(--ink); }
+.case-mobile .case-proof { color: #6c5b4d; }
+.case-mobile .case-proof strong { color: #33251d; }
+.case-mobile .case-proof li::before { background: #a5522d; }
+
 .case-links { display: flex; gap: var(--s-2); flex-wrap: wrap; margin-top: var(--s-3); }
 
 .case-award {
@@ -385,6 +448,37 @@ a { color: var(--purple-700); }
   margin-bottom: var(--s-2);
 }
 .case-mobile .case-award { background: rgba(255,255,255,0.78); color: #6c3c20; box-shadow: none; }
+
+/* ---------- Additional work ---------- */
+.other-work { padding-block: var(--s-6) var(--s-12); }
+.other-work .section-head { margin-bottom: var(--s-4); }
+.mini-case {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--s-4);
+  align-items: center;
+  padding: var(--s-4);
+  border: 1px solid rgba(74, 68, 198, 0.14);
+  border-radius: var(--r-lg);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+.mini-case h3 { font-size: var(--text-xl); }
+.mini-case p:last-child { color: var(--ink-soft); margin: 0; max-width: 48rem; }
+.mini-case-mark {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #38327d, #6c63e0);
+  color: #fff;
+  font-size: var(--text-sm);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  box-shadow: var(--shadow-soft);
+}
+.mini-case-action { align-self: center; }
 
 /* ---------- Process ---------- */
 .process {
@@ -455,6 +549,11 @@ a { color: var(--purple-700); }
   .case { grid-template-columns: 1fr; gap: var(--s-4); padding: var(--s-4); }
   .case:nth-child(even) .case-media { order: 0; }
   .skills-grid, .process-grid { grid-template-columns: 1fr; }
+  .proof-grid { grid-template-columns: repeat(2, 1fr); }
+  .proof-item:nth-child(2) { border-right: 0; }
+  .proof-item:nth-child(-n+2) { border-bottom: 1px solid rgba(74, 68, 198, 0.12); }
+  .mini-case { grid-template-columns: auto 1fr; }
+  .mini-case-action { grid-column: 2; }
 }
 
 @media (max-width: 560px) {
@@ -462,4 +561,9 @@ a { color: var(--purple-700); }
   .nav-links li:nth-child(n+4) { display: none; }
   .hero { padding-block: var(--s-8) var(--s-6); }
   .phone-strip img:nth-child(2) { transform: none; }
+  .proof { width: min(1120px, 92vw); }
+  .proof-item { min-height: 124px; padding: var(--s-2); }
+  .proof-item strong { font-size: 1.7rem; }
+  .mini-case { grid-template-columns: 1fr; gap: var(--s-2); }
+  .mini-case-action { grid-column: auto; }
 }
